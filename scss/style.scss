@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.tour{
+    img{
+        height: 250px;
+        object-fit: cover;
+    }
+    h3{
+        bottom: 4px;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+.front{
+    p{
+        margin-bottom: 3rem;
+    }
+}
+.hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.477), rgba(0, 0, 0, 0.413)), url(https://nepalwanders.com/wp-content/uploads/2023/08/4-1.jpg);
+    height: 100vh;
+    background-size: cover;
+    .logo{
+        width: 90px;
+    }
+    &-content{
+        width: 900px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        h1{
+            font-size: 3.2rem;
+            font-weight: 700;
+            span{
+                color: #FF9F1C;
+            }
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+   
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: #fff;
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 700;
+    
+}
+.nav-pills .nav-link{
+    color: #000;
+}
+.nav-pills .nav-link.active{
+    background: transparent;
+    color: #000;
+    font-weight: bold;
+}
+.quote{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://nepalwanders.com/wp-content/themes/nepalwanders/img/youtube.jpg);
+    height: 90vh;
+    background-size: cover;
+    position: relative;
+    &-inner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        h2{
+            margin-top: 20px;
+        }
+    .circle{
+        width: 90px;
+        height: 90px;
+        margin: auto;
+        border-radius: 50%;
+        background: #fff;
+        text-align: center;
+        color: #FF9F1C;
+        line-height: 90px;
+        font-size: 56px;
+        // height is related to line-height. if to keep at the center
+        // background: #FF9F1C;
+    }
+}
+}
+.team{
+    &-inner{
+        p{
+            font-size: 1.5rem;
+            color:  #5A564F; 
+            // display: flex;
+        }
+    }
+}
+
+footer{
+    background: #16161E;
+    ul{
+        list-style: none;
+li{
+    
+    a{
+        color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    }
+    p{
+        color: #fff;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}
+    } 
+}
+.contact li a{
+    font-size: 14px;
+}
+.copyright{
+    color: #fff;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+}
+.header.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    animation: sticky 0.9s;
+    z-index: 9999;
+}
+@keyframes sticky{
+    0%{ transform: translateY(-100%);}
+    100%{ transform: translateY(0%);}
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    background: rgb(57, 57, 57);
+}
+.dropdown a{
+    color: #e0dfdf;
+}
